@@ -27,6 +27,10 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['notificationstatement'] = '';
 $string['notificationtype'] = 'Information';
+$string['notificationtype:error'] = 'Error';
+$string['notificationtype:information'] = 'Information';
+$string['notificationtype:success'] = 'Success';
+$string['notificationtype:warning'] = 'Warning';
 $string['pluginname'] = 'Edit course notification';
 $string['privacy:metadata'] = 'Edit course notification plugin does not store any personal data';
 $string['setting:notificationstatement'] = 'Statement text';
