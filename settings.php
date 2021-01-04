@@ -12,7 +12,7 @@
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
  * Plugin administration pages are defined here.
@@ -39,10 +39,14 @@ if ($hassiteconfig) {
             get_string('setting:notificationtype_desc', 'local_edit_course_notification'),
             \core\output\notification::NOTIFY_INFO,
             [
-                \core\output\notification::NOTIFY_INFO => get_string('notificationtype:information', 'local_edit_course_notification'),
-                \core\output\notification::NOTIFY_ERROR => get_string('notificationtype:error', 'local_edit_course_notification'),
-                \core\output\notification::NOTIFY_SUCCESS => get_string('notificationtype:success', 'local_edit_course_notification'),
-                \core\output\notification::NOTIFY_WARNING => get_string('notificationtype:warning', 'local_edit_course_notification'),
+                \core\output\notification::NOTIFY_INFO =>
+                    get_string('notificationtype:information', 'local_edit_course_notification'),
+                \core\output\notification::NOTIFY_ERROR =>
+                    get_string('notificationtype:error', 'local_edit_course_notification'),
+                \core\output\notification::NOTIFY_SUCCESS =>
+                    get_string('notificationtype:success', 'local_edit_course_notification'),
+                \core\output\notification::NOTIFY_WARNING =>
+                    get_string('notificationtype:warning', 'local_edit_course_notification'),
             ]
         ));
         $settingspage->add(new admin_setting_configtextarea('local_edit_course_notification/notificationstatement',
