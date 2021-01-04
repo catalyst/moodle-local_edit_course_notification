@@ -37,7 +37,7 @@ if ($hassiteconfig) {
         $settingspage->add(new admin_setting_configselect('local_edit_course_notification/notificationtype',
             get_string('setting:notificationtype', 'local_edit_course_notification'),
             get_string('setting:notificationtype_desc', 'local_edit_course_notification'),
-            get_string('notificationtype', 'local_edit_course_notification'),
+            \core\output\notification::NOTIFY_INFO,
             [
                 \core\output\notification::NOTIFY_INFO => get_string('notificationtype:information', 'local_edit_course_notification'),
                 \core\output\notification::NOTIFY_ERROR => get_string('notificationtype:error', 'local_edit_course_notification'),
@@ -48,7 +48,7 @@ if ($hassiteconfig) {
         $settingspage->add(new admin_setting_configtextarea('local_edit_course_notification/notificationstatement',
             get_string('setting:notificationstatement', 'local_edit_course_notification'),
             get_string('setting:notificationstatement_desc', 'local_edit_course_notification'),
-            get_string('notificationstatement', 'local_edit_course_notification')));
+            ''));
     }
 
     $ADMIN->add('localplugins', $settingspage);

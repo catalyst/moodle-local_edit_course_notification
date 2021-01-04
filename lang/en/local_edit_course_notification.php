@@ -25,8 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['notificationstatement'] = '';
-$string['notificationtype'] = \core\output\notification::NOTIFY_INFO;
 $string['notificationtype:error'] = 'Error';
 $string['notificationtype:information'] = 'Information';
 $string['notificationtype:success'] = 'Success';
