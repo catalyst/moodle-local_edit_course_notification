@@ -2,7 +2,7 @@
 Feature: Edit notification
   In order to show notification text
   As an editor
-  I need to see a notification text when editing a course if it's set
+  I need to be able to set notification text and type
 
   Background:
     Given the following "courses" exist:
@@ -17,14 +17,14 @@ Feature: Edit notification
       | notificationtype      | info                |
     And I am on "Course 1" course homepage
     And I turn editing mode on
-    Then I should see "Notification test text" in the "//div[contains(@class, 'alert-info')]" "xpath_element"
-    And "//div[contains(@class, 'alert-warning')]" "xpath_element" should not exist
-    And "//div[contains(@class, 'alert-danger')]" "xpath_element" should not exist
-    And "//div[contains(@class, 'alert-success')]" "xpath_element" should not exist
+    Then I should see "Notification test text" in the ".alert-info" "css_element"
+    And ".alert-warning" "css_element" should not exist
+    And ".alert-danger" "css_element" should not exist
+    And ".alert-success" "css_element" should not exist
     And I am on "Course 2" course homepage
-    And I should see "Notification test text" in the "//div[contains(@class, 'alert-info')]" "xpath_element"
+    And I should see "Notification test text" in the ".alert-info" "css_element"
     And I turn editing mode off
-    And "//div[contains(@class, 'alert-info')]" "xpath_element" should not exist
+    And ".alert-info" "css_element" should not exist
 
   Scenario: Course edit mode on with warning type settings
     Given I set the following administration settings values:
@@ -32,10 +32,10 @@ Feature: Edit notification
       | notificationtype      | warning                |
     And I am on "Course 1" course homepage
     And I turn editing mode on
-    Then I should see "Notification test text" in the "//div[contains(@class, 'alert-warning')]" "xpath_element"
-    And "//div[contains(@class, 'alert-info')]" "xpath_element" should not exist
-    And "//div[contains(@class, 'alert-danger')]" "xpath_element" should not exist
-    And "//div[contains(@class, 'alert-success')]" "xpath_element" should not exist
+    Then I should see "Notification test text" in the ".alert-warning" "css_element"
+    And ".alert-info" "css_element" should not exist
+    And ".alert-danger" "css_element" should not exist
+    And ".alert-success" "css_element" should not exist
 
   Scenario: Course edit mode on with error type settings
     Given I set the following administration settings values:
@@ -43,10 +43,10 @@ Feature: Edit notification
       | notificationtype      | error                  |
     And I am on "Course 1" course homepage
     And I turn editing mode on
-    Then I should see "Notification test text" in the "//div[contains(@class, 'alert-danger')]" "xpath_element"
-    And "//div[contains(@class, 'alert-info')]" "xpath_element" should not exist
-    And "//div[contains(@class, 'alert-warning')]" "xpath_element" should not exist
-    And "//div[contains(@class, 'alert-success')]" "xpath_element" should not exist
+    Then I should see "Notification test text" in the ".alert-danger" "css_element"
+    And ".alert-info" "css_element" should not exist
+    And ".alert-warning" "css_element" should not exist
+    And ".alert-success" "css_element" should not exist
 
   Scenario: Course edit mode on with success type settings
     Given I set the following administration settings values:
@@ -54,10 +54,10 @@ Feature: Edit notification
       | notificationtype      | success                |
     And I am on "Course 1" course homepage
     And I turn editing mode on
-    Then I should see "Notification test text" in the "//div[contains(@class, 'alert-success')]" "xpath_element"
-    And "//div[contains(@class, 'alert-info')]" "xpath_element" should not exist
-    And "//div[contains(@class, 'alert-danger')]" "xpath_element" should not exist
-    And "//div[contains(@class, 'alert-warning')]" "xpath_element" should not exist
+    Then I should see "Notification test text" in the ".alert-success" "css_element"
+    And ".alert-info" "css_element" should not exist
+    And ".alert-danger" "css_element" should not exist
+    And ".alert-warning" "css_element" should not exist
 
   Scenario: Course edit mode off with settings
     Given I set the following administration settings values:
@@ -65,10 +65,10 @@ Feature: Edit notification
       | notificationtype      | info                   |
     And I am on "Course 1" course homepage
     Then I should not see "Notification test text"
-    And "//div[contains(@class, 'alert-info')]" "xpath_element" should not exist
-    And "//div[contains(@class, 'alert-warning')]" "xpath_element" should not exist
-    And "//div[contains(@class, 'alert-danger')]" "xpath_element" should not exist
-    And "//div[contains(@class, 'alert-success')]" "xpath_element" should not exist
+    And ".alert-info" "css_element" should not exist
+    And ".alert-warning" "css_element" should not exist
+    And ".alert-danger" "css_element" should not exist
+    And ".alert-success" "css_element" should not exist
 
   Scenario: Course edit mode on with empty settings
     Given I set the following administration settings values:
@@ -77,10 +77,10 @@ Feature: Edit notification
     And I am on "Course 1" course homepage
     And I turn editing mode on
     Then I should not see "Notification test text"
-    And "//div[contains(@class, 'alert-info')]" "xpath_element" should not exist
-    And "//div[contains(@class, 'alert-warning')]" "xpath_element" should not exist
-    And "//div[contains(@class, 'alert-danger')]" "xpath_element" should not exist
-    And "//div[contains(@class, 'alert-success')]" "xpath_element" should not exist
+    And ".alert-info" "css_element" should not exist
+    And ".alert-warning" "css_element" should not exist
+    And ".alert-danger" "css_element" should not exist
+    And ".alert-success" "css_element" should not exist
 
   Scenario: Home edit mode on (not showing for homepage)
     Given I set the following administration settings values:
@@ -89,7 +89,7 @@ Feature: Edit notification
     And I am on site homepage
     And I turn editing mode on
     Then I should not see "Notification test text"
-    And "//div[contains(@class, 'alert-info')]" "xpath_element" should not exist
-    And "//div[contains(@class, 'alert-warning')]" "xpath_element" should not exist
-    And "//div[contains(@class, 'alert-danger')]" "xpath_element" should not exist
-    And "//div[contains(@class, 'alert-success')]" "xpath_element" should not exist
+    And ".alert-info" "css_element" should not exist
+    And ".alert-warning" "css_element" should not exist
+    And ".alert-danger" "css_element" should not exist
+    And ".alert-success" "css_element" should not exist
