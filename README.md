@@ -3,7 +3,7 @@
 Show statements when an editor enables to edit courses.
 
 Once this plugin is installed, you can set statements in Site administration > Plugins > Local plugins > Edit course notification
-When the statements are set up, the statement will be appeared when the editor enables to edit courses.
+When the statements are set up, the statement will be appeared when the editor enables to edit courses. Showing the same statements for all courses.
 
 ## License ##
 
