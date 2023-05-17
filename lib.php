@@ -34,7 +34,7 @@ function local_edit_course_notification_extend_navigation_course($navigation, $c
 
     global $USER, $SCRIPT;
 
-    if ($SCRIPT === '/course/view.php' && $USER->editing === 1) {
+    if ($SCRIPT === '/course/view.php' && $USER->editing == 1) {
         $notificationstatement = get_config('local_edit_course_notification', 'notificationstatement');
         if (!empty($notificationstatement)) {
             $notificationtype = get_config('local_edit_course_notification', 'notificationtype');
