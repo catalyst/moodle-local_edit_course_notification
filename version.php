@@ -25,7 +25,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'local_edit_course_notification';
-$plugin->release = '1.0.0';
-$plugin->version = 2020123000;
+$plugin->release = 2024112200;
+$plugin->version = 2024112200;
 $plugin->requires = 2020061500;
 $plugin->maturity = MATURITY_STABLE;
+$plugin->supported = [39, 405];

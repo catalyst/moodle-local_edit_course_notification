@@ -14,6 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+namespace local_edit_course_notification\privacy;
+
 /**
  * Privacy Subsystem implementation for local_edit_course_notification.
  *
@@ -21,11 +23,6 @@
  * @copyright  2020 Tomo Tsuyuki <tomotsuyuki@catalyst-au.net>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
-namespace local_edit_course_notification\privacy;
-
-defined('MOODLE_INTERNAL') || die();
-
 class provider implements
     // This plugin does not store any personal user data.
     \core_privacy\local\metadata\null_provider {
