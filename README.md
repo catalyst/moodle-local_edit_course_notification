@@ -1,3 +1,5 @@
+![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/catalyst/moodle-local_edit_course_notification/ci.yml?branch=master)
+
 # Edit course notification #
 
 Show statements when an editor enables to edit courses.
@@ -5,18 +7,32 @@ Show statements when an editor enables to edit courses.
 Once this plugin is installed, you can set statements in Site administration > Plugins > Local plugins > Edit course notification
 When the statements are set up, the statement will be appeared when the editor enables to edit courses. Showing the same statements for all courses.
 
-## License ##
+## Branches
 
-2020 Tomo Tsuyuki <tomotsuyuki@catalyst-au.net>
+| Moodle version | Branch       |
+|----------------|--------------|
+| Moodle 3.9+    | master       |
 
-This program is free software: you can redistribute it and/or modify it under
-the terms of the GNU General Public License as published by the Free Software
-Foundation, either version 3 of the License, or (at your option) any later
-version.
 
-This program is distributed in the hope that it will be useful, but WITHOUT ANY
-WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
-PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+# Warm thanks #
 
-You should have received a copy of the GNU General Public License along with
-this program.  If not, see <http://www.gnu.org/licenses/>.
+Thanks to Monash University (https://www.monash.edu) for funding the development of this plugin.
+
+
+# Crafted by Catalyst IT
+
+This plugin was developed by Catalyst IT Australia:
+
+https://www.catalyst-au.net/
+
+
+# Contributing and Support
+
+Issues, and pull requests using github are welcome and encouraged!
+
+https://github.com/catalyst/moodle-local_edit_course_notification/issues
+
+If you would like commercial support or would like to sponsor additional improvements
+to this plugin please contact us:
+
+https://www.catalyst-au.net/contact-us
