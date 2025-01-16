@@ -1,4 +1,4 @@
-![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/catalyst/moodle-local_edit_course_notification/ci.yml?branch=master)
+[![ci](https://github.com/catalyst/moodle-local_edit_course_notification/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/catalyst/moodle-local_edit_course_notification/actions/workflows/ci.yml?branch=master)
 
 # Edit course notification #
 
